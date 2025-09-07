@@ -30,7 +30,6 @@ export const AddressSchema = z.object({
 		.describe("State name within the United States (e.g., California)."),
 	country: z
 		.string()
-		.default("United States")
 		.describe(
 			"Country must be the United States. Accepted inputs: United States, US, USA, unitedstates, us, usa.",
 		),

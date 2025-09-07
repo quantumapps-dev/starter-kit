@@ -9,7 +9,11 @@ import { Textarea } from "./ui/textarea";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 import { ChevronDown, ChevronRight } from "lucide-react";
 
-export function AiMode() {
+interface AiModeProps {
+  onClose?: () => void;
+}
+
+export function AiMode({ onClose }: AiModeProps = {}) {
   const [input, setInput] = useState("");
   const [formDataOpen, setFormDataOpen] = useState<Record<string, boolean>>({});
   const { messages, sendMessage } = useChat();
@@ -64,7 +68,7 @@ export function AiMode() {
     <Card className="h-full flex flex-col border-l">
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle>AI Mode</CardTitle>
-        <Button variant="ghost" onClick={() => {}}>
+        <Button variant="ghost" onClick={onClose}>
           Close
         </Button>
       </CardHeader>

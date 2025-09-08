@@ -9,11 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 
-interface FormComponentProps {
-  isFullScreen?: boolean;
-}
-
-export function FormComponent({ isFullScreen = false }: FormComponentProps) {
+export function FormComponent() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   
   const {
@@ -51,7 +47,7 @@ export function FormComponent({ isFullScreen = false }: FormComponentProps) {
   const formData = watch();
 
   return (
-    <div className={`transition-all duration-300 ${isFullScreen ? 'w-full' : 'w-full'}`}>
+    <div className={`transition-all duration-300 w-full`}>
       <Card className="w-full max-w-2xl mx-auto">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">

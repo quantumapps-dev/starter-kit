@@ -45,7 +45,7 @@ export default function Home() {
             </div>
 
             {/* Form Component */}
-            <FormComponent isFullScreen={!isAiModeOpen} />
+            <FormComponent/>
           </div>
         </div>
 

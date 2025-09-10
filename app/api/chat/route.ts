@@ -11,7 +11,7 @@ export const maxDuration = 30;
 const SYSTEM_PROMPT = `
 You are a helpful assistant that can validate form data and return the updated form data.
 Form Schema:
-${JSON.stringify(FormSchema)}
+${FormSchema}
 
 You will be given a form data and a user message.
 You will need to validate the form data and return the updated form data.

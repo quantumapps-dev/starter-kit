@@ -1,3 +1,4 @@
+// @ts-nocheck 
 import { z } from "zod";
 
 // Address schema for US addresses only

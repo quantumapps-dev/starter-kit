@@ -15,7 +15,7 @@ export default function Home() {
             Welcome to Quantum Apps
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            Your gateway to quantum-powered applications and cutting-edge technology solutions.
+            Your gateway to AI-Powered Enterprise Apps
           </p>
         </div>
 
